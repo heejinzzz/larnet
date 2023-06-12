@@ -78,7 +78,7 @@ python main.py --dataset {dataset}
 For example, if you want to train the LaRNet model on the IEMOCAP dataset, then the command will be:
 
 ```shell
-python main.py --dataset {iemocap}
+python main.py --dataset iemocap
 ```
 
 The full set of optional arguments are:
