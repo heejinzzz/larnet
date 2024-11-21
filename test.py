@@ -55,7 +55,7 @@ if __name__ == "__main__":
     device = config.device
     model = LaRNet(config).to(device)
     print("Create model succeed.")
-    model.load_state_dict(torch.load(checkpoint_file))
+    model.load_state_dict(torch.load(checkpoint_file, map_location=device))
     print("Load model weights succeed.")
 
     print("Testing...")
